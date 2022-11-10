@@ -42,9 +42,9 @@ public class HomePage {
 	public HomePage addProductToCart(String name) {
 		String locator = "#add-to-cart-"+name;
 		System.out.println("locator: "+locator);
-		page.screenshot(new Page.ScreenshotOptions()
+		/*page.screenshot(new Page.ScreenshotOptions()
 				  .setPath(Paths.get("screenshot2.png"))
-				  .setFullPage(true));
+				  .setFullPage(true));*/
 		//page.locator(locator).screenshot(new Locator.ScreenshotOptions().setPath(Paths.get("screenshot.png")));
 		page.click(locator);
 		

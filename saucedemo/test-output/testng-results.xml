@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T08:05:41 IST" name="Default suite" finished-at="2022-11-09T08:05:42 IST" duration-ms="852">
+  <suite started-at="2022-11-09T17:13:24 IST" name="Suite" finished-at="2022-11-09T17:13:25 IST" duration-ms="1256">
     <groups>
     </groups>
-    <test started-at="2022-11-09T08:05:41 IST" name="Default test" finished-at="2022-11-09T08:05:42 IST" duration-ms="852">
+    <test started-at="2022-11-09T17:13:24 IST" name="Test" finished-at="2022-11-09T17:13:25 IST" duration-ms="1256">
       <class name="tests.TestProductCheckout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestProductCheckout@543588e6]" started-at="2022-11-09T08:05:33 IST" name="setup" finished-at="2022-11-09T08:05:41 IST" duration-ms="7728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyProductCheckout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.TestProductCheckout@543588e6]" started-at="2022-11-09T08:05:41 IST" name="verifyProductCheckout" description="productCheckout.csv" data-provider="getCsvData" finished-at="2022-11-09T08:05:42 IST" duration-ms="799" status="PASS">
+        <test-method signature="verifyProductCheckout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.TestProductCheckout@18f20260]" started-at="2022-11-09T17:13:24 IST" name="verifyProductCheckout" description="productCheckout.csv" data-provider="getCsvData" finished-at="2022-11-09T17:13:25 IST" duration-ms="1071" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,11 +38,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestProductCheckout@543588e6]" started-at="2022-11-09T08:05:42 IST" name="tearDown" finished-at="2022-11-09T08:05:42 IST" duration-ms="13" status="PASS">
+      </class> <!-- tests.TestProductCheckout -->
+      <class name="tests.TestProductAddedToCart">
+        <test-method signature="verifyProductAddedToCart(java.lang.String,java.lang.String)[pri:0, instance:tests.TestProductAddedToCart@6722db6e]" started-at="2022-11-09T17:13:24 IST" name="verifyProductAddedToCart" description="productAddedToCart.csv" data-provider="getCsvData" finished-at="2022-11-09T17:13:24 IST" duration-ms="103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sauce-labs-backpack]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sauce Labs Backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart -->
+      </class> <!-- tests.TestProductAddedToCart -->
+      <class name="tests.TestHomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestHomePage@19fe4644]" started-at="2022-11-09T17:13:20 IST" name="setup" finished-at="2022-11-09T17:13:24 IST" duration-ms="3953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:tests.TestHomePage@19fe4644]" started-at="2022-11-09T17:13:24 IST" name="verifyHomePageTitle" finished-at="2022-11-09T17:13:24 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestHomePage@19fe4644]" started-at="2022-11-09T17:13:25 IST" name="tearDown" finished-at="2022-11-09T17:13:25 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.TestProductCheckout -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.TestHomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
